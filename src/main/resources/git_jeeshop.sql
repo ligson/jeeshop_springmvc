@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50616
 File Encoding         : 65001
 
-Date: 2015-12-16 17:41:34
+Date: 2015-12-16 18:42:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -4015,65 +4015,65 @@ CREATE TABLE `t_menu` (
 -- ----------------------------
 INSERT INTO `t_menu` VALUES ('1', '0', '', '系统管理', '20', 'module');
 INSERT INTO `t_menu` VALUES ('2', '1', 'system/menu/menuList.jsp', '资源管理', '3', 'page');
-INSERT INTO `t_menu` VALUES ('3', '1', 'user!selectList.action?init=y', '用户管理', '1', 'page');
-INSERT INTO `t_menu` VALUES ('4', '1', 'role!selectList.action?init=y', '角色管理', '2', 'page');
-INSERT INTO `t_menu` VALUES ('5', '1', 'user!toChangePwd.action', '修改密码', '4', 'page');
+INSERT INTO `t_menu` VALUES ('3', '1', 'user/selectList.action?init=y', '用户管理', '1', 'page');
+INSERT INTO `t_menu` VALUES ('4', '1', 'role/selectList.action?init=y', '角色管理', '2', 'page');
+INSERT INTO `t_menu` VALUES ('5', '1', 'user/toChangePwd.action', '修改密码', '4', 'page');
 INSERT INTO `t_menu` VALUES ('6', '0', '', '内容管理', '4', 'module');
-INSERT INTO `t_menu` VALUES ('7', '6', 'news!selectList.action?init=y&type=help', '文章管理', '3', 'page');
-INSERT INTO `t_menu` VALUES ('9', '6', 'indexImg!selectList.action', '门户滚动图片', '6', 'page');
+INSERT INTO `t_menu` VALUES ('7', '6', 'news/selectList.action?init=y&type=help', '文章管理', '3', 'page');
+INSERT INTO `t_menu` VALUES ('9', '6', 'indexImg/selectList.action', '门户滚动图片', '6', 'page');
 INSERT INTO `t_menu` VALUES ('11', '0', '', '商品管理', '1', 'module');
-INSERT INTO `t_menu` VALUES ('14', '11', 'product!selectList.action?init=y', '商品管理', '4', 'page');
+INSERT INTO `t_menu` VALUES ('14', '11', 'product/selectList.action?init=y', '商品管理', '4', 'page');
 INSERT INTO `t_menu` VALUES ('18', '0', '', '订单管理', '2', 'module');
-INSERT INTO `t_menu` VALUES ('19', '18', 'order!selectList.action?init=y', '订单管理', '1', 'page');
+INSERT INTO `t_menu` VALUES ('19', '18', 'order/selectList.action?init=y', '订单管理', '1', 'page');
 INSERT INTO `t_menu` VALUES ('23', '0', '', '会员管理', '3', 'module');
-INSERT INTO `t_menu` VALUES ('24', '23', 'account!selectList.action?init=y', '会员管理', '1', 'page');
+INSERT INTO `t_menu` VALUES ('24', '23', 'account/selectList.action?init=y', '会员管理', '1', 'page');
 INSERT INTO `t_menu` VALUES ('32', '0', '', '报表统计', '6', 'module');
-INSERT INTO `t_menu` VALUES ('34', '32', 'report!orderSales.action?init=y', '订单销售统计', '2', 'page');
-INSERT INTO `t_menu` VALUES ('35', '32', 'report!productSales.action?init=y', '商品销售统计', '3', 'page');
-INSERT INTO `t_menu` VALUES ('36', '1', 'systemlog!selectList.action?init=y', '日志管理', '8', 'page');
-INSERT INTO `t_menu` VALUES ('38', '1', 'express!selectList.action?init=y', '配送方式', '6', 'page');
-INSERT INTO `t_menu` VALUES ('40', '6', 'advert!selectList.action?init=y', '广告管理', '8', 'page');
-INSERT INTO `t_menu` VALUES ('43', '6', 'catalog!selectList.action?init=y&e.type=a', '文章分类', '1', 'page');
-INSERT INTO `t_menu` VALUES ('45', '6', 'navigation!selectList.action?init=y', '友情链接', '5', 'page');
-INSERT INTO `t_menu` VALUES ('46', '23', 'comment!selectList.action?init=y', '评论管理', '3', 'page');
+INSERT INTO `t_menu` VALUES ('34', '32', 'report/orderSales.action?init=y', '订单销售统计', '2', 'page');
+INSERT INTO `t_menu` VALUES ('35', '32', 'report/productSales.action?init=y', '商品销售统计', '3', 'page');
+INSERT INTO `t_menu` VALUES ('36', '1', 'systemlog/selectList.action?init=y', '日志管理', '8', 'page');
+INSERT INTO `t_menu` VALUES ('38', '1', 'express/selectList.action?init=y', '配送方式', '6', 'page');
+INSERT INTO `t_menu` VALUES ('40', '6', 'advert/selectList.action?init=y', '广告管理', '8', 'page');
+INSERT INTO `t_menu` VALUES ('43', '6', 'catalog/selectList.action?init=y&e.type=a', '文章分类', '1', 'page');
+INSERT INTO `t_menu` VALUES ('45', '6', 'navigation/selectList.action?init=y', '友情链接', '5', 'page');
+INSERT INTO `t_menu` VALUES ('46', '23', 'comment/selectList.action?init=y', '评论管理', '3', 'page');
 INSERT INTO `t_menu` VALUES ('48', '1', 'area/areaTree.jsp', '区域管理', '5', 'page');
-INSERT INTO `t_menu` VALUES ('49', '1', 'systemSetting!toEdit.action?init=y', '系统设置', '9', 'page');
-INSERT INTO `t_menu` VALUES ('51', '1', 'keyvalue!selectList.action?init=y', '键值对管理', '11', 'page');
-INSERT INTO `t_menu` VALUES ('52', '3', 'user!selectList.action', '查询', '1', 'button');
-INSERT INTO `t_menu` VALUES ('55', '3', 'user!insert.action', '添加', '2', 'button');
-INSERT INTO `t_menu` VALUES ('56', '3', 'user!deletes.action', '删除', '3', 'button');
-INSERT INTO `t_menu` VALUES ('57', '0', '../user!initManageIndex.action', '首页', '-100', 'page');
-INSERT INTO `t_menu` VALUES ('58', '4', 'role!selectList.action', '查询', '1', 'button');
-INSERT INTO `t_menu` VALUES ('59', '4', 'role!insert.action', '添加', '2', 'button');
-INSERT INTO `t_menu` VALUES ('60', '4', 'role!deletes.action', '删除', '3', 'button');
-INSERT INTO `t_menu` VALUES ('61', '2', 'menu!selectList.action', '查询', '1', 'button');
-INSERT INTO `t_menu` VALUES ('62', '2', 'menu!insert.action', '添加', '2', 'button');
-INSERT INTO `t_menu` VALUES ('63', '2', 'menu!deletes.action', '删除', '3', 'button');
-INSERT INTO `t_menu` VALUES ('64', '11', 'attribute!selectList.action?init=y&e.pid=0', '商品属性', '5', 'page');
-INSERT INTO `t_menu` VALUES ('65', '11', 'catalog!selectList.action?init=y&e.type=p', '商品目录', '2', 'page');
-INSERT INTO `t_menu` VALUES ('66', '11', 'attribute!selectList.action?init=y&e.pid=-1', '商品参数', '6', 'page');
+INSERT INTO `t_menu` VALUES ('49', '1', 'systemSetting/toEdit.action?init=y', '系统设置', '9', 'page');
+INSERT INTO `t_menu` VALUES ('51', '1', 'keyvalue/selectList.action?init=y', '键值对管理', '11', 'page');
+INSERT INTO `t_menu` VALUES ('52', '3', 'user/selectList.action', '查询', '1', 'button');
+INSERT INTO `t_menu` VALUES ('55', '3', 'user/insert.action', '添加', '2', 'button');
+INSERT INTO `t_menu` VALUES ('56', '3', 'user/deletes.action', '删除', '3', 'button');
+INSERT INTO `t_menu` VALUES ('57', '0', '../user/initManageIndex.action', '首页', '-100', 'page');
+INSERT INTO `t_menu` VALUES ('58', '4', 'role/selectList.action', '查询', '1', 'button');
+INSERT INTO `t_menu` VALUES ('59', '4', 'role/insert.action', '添加', '2', 'button');
+INSERT INTO `t_menu` VALUES ('60', '4', 'role/deletes.action', '删除', '3', 'button');
+INSERT INTO `t_menu` VALUES ('61', '2', 'menu/selectList.action', '查询', '1', 'button');
+INSERT INTO `t_menu` VALUES ('62', '2', 'menu/insert.action', '添加', '2', 'button');
+INSERT INTO `t_menu` VALUES ('63', '2', 'menu/deletes.action', '删除', '3', 'button');
+INSERT INTO `t_menu` VALUES ('64', '11', 'attribute/selectList.action?init=y&e.pid=0', '商品属性', '5', 'page');
+INSERT INTO `t_menu` VALUES ('65', '11', 'catalog/selectList.action?init=y&e.type=p', '商品目录', '2', 'page');
+INSERT INTO `t_menu` VALUES ('66', '11', 'attribute/selectList.action?init=y&e.pid=-1', '商品参数', '6', 'page');
 INSERT INTO `t_menu` VALUES ('69', '1', 'cache/cache.jsp', '缓存管理', '12', 'page');
-INSERT INTO `t_menu` VALUES ('71', '6', 'news!selectList.action?init=y&type=notice', '公告管理', '2', 'page');
-INSERT INTO `t_menu` VALUES ('73', '14', 'product!selectList.action', '查询', '1', 'button');
-INSERT INTO `t_menu` VALUES ('74', '14', 'product!toAdd.action', '添加', '2', 'button');
-INSERT INTO `t_menu` VALUES ('75', '14', 'product!deletes.action', '删除', '3', 'button');
-INSERT INTO `t_menu` VALUES ('76', '14', 'product!up.action', '上架', '4', 'button');
-INSERT INTO `t_menu` VALUES ('77', '14', 'product!down.action', '下架', '5', 'button');
-INSERT INTO `t_menu` VALUES ('78', '14', 'product!toEdit.action', '编辑', '1', 'button');
+INSERT INTO `t_menu` VALUES ('71', '6', 'news/selectList.action?init=y&type=notice', '公告管理', '2', 'page');
+INSERT INTO `t_menu` VALUES ('73', '14', 'product/selectList.action', '查询', '1', 'button');
+INSERT INTO `t_menu` VALUES ('74', '14', 'product/toAdd.action', '添加', '2', 'button');
+INSERT INTO `t_menu` VALUES ('75', '14', 'product/deletes.action', '删除', '3', 'button');
+INSERT INTO `t_menu` VALUES ('76', '14', 'product/up.action', '上架', '4', 'button');
+INSERT INTO `t_menu` VALUES ('77', '14', 'product/down.action', '下架', '5', 'button');
+INSERT INTO `t_menu` VALUES ('78', '14', 'product/toEdit.action', '编辑', '1', 'button');
 INSERT INTO `t_menu` VALUES ('80', '0', '', '第三方插件', '8', 'module');
-INSERT INTO `t_menu` VALUES ('81', '80', 'pay!selectList.action?init=y', '支付管理', '1', 'page');
-INSERT INTO `t_menu` VALUES ('82', '80', 'oss!selectList.action?init=y', '存储管理', '2', 'page');
-INSERT INTO `t_menu` VALUES ('83', '80', 'commentType!selectList.action?init=y', '评论管理', '3', 'page');
-INSERT INTO `t_menu` VALUES ('84', '18', 'order!selectList.action?init=y&refundStatus=WAIT_SELLER_AGREE', '退款管理', '2', 'page');
-INSERT INTO `t_menu` VALUES ('85', '18', 'order!selectList.action?init=y&refundStatus=WAIT_SELLER_CONFIRM_GOODS', '退货管理', '3', 'page');
-INSERT INTO `t_menu` VALUES ('86', '11', 'emailNotifyProduct!selectList?init=y', '到货通知', '11', 'page');
-INSERT INTO `t_menu` VALUES ('87', '6', 'notifyTemplate!selectList.action?init=y', '通知模板管理', '13', 'page');
-INSERT INTO `t_menu` VALUES ('88', '6', 'email!selectList.action?init=y', '发送邮件列表', '14', 'page');
-INSERT INTO `t_menu` VALUES ('90', '23', 'accountRank!selectList.action?init=y', '等级管理', '0', 'page');
+INSERT INTO `t_menu` VALUES ('81', '80', 'pay/selectList.action?init=y', '支付管理', '1', 'page');
+INSERT INTO `t_menu` VALUES ('82', '80', 'oss/selectList.action?init=y', '存储管理', '2', 'page');
+INSERT INTO `t_menu` VALUES ('83', '80', 'commentType/selectList.action?init=y', '评论管理', '3', 'page');
+INSERT INTO `t_menu` VALUES ('84', '18', 'order/selectList.action?init=y&refundStatus=WAIT_SELLER_AGREE', '退款管理', '2', 'page');
+INSERT INTO `t_menu` VALUES ('85', '18', 'order/selectList.action?init=y&refundStatus=WAIT_SELLER_CONFIRM_GOODS', '退货管理', '3', 'page');
+INSERT INTO `t_menu` VALUES ('86', '11', 'emailNotifyProduct/selectList?init=y', '到货通知', '11', 'page');
+INSERT INTO `t_menu` VALUES ('87', '6', 'notifyTemplate/selectList.action?init=y', '通知模板管理', '13', 'page');
+INSERT INTO `t_menu` VALUES ('88', '6', 'email/selectList.action?init=y', '发送邮件列表', '14', 'page');
+INSERT INTO `t_menu` VALUES ('90', '23', 'accountRank/selectList.action?init=y', '等级管理', '0', 'page');
 INSERT INTO `t_menu` VALUES ('91', '0', '', '活动管理', '19', 'module');
-INSERT INTO `t_menu` VALUES ('92', '91', 'activity!selectList.action?init=y', '商品促销', '1', 'page');
-INSERT INTO `t_menu` VALUES ('93', '11', 'gift!selectList.action?init=y', '赠品管理', '8', 'page');
-INSERT INTO `t_menu` VALUES ('94', '6', 'hotquery!selectList.action?init=y', '热门查询管理', '20', 'page');
+INSERT INTO `t_menu` VALUES ('92', '91', 'activity/selectList.action?init=y', '商品促销', '1', 'page');
+INSERT INTO `t_menu` VALUES ('93', '11', 'gift/selectList.action?init=y', '赠品管理', '8', 'page');
+INSERT INTO `t_menu` VALUES ('94', '6', 'hotquery/selectList.action?init=y', '热门查询管理', '20', 'page');
 
 -- ----------------------------
 -- Table structure for t_navigation
@@ -6190,7 +6190,7 @@ INSERT INTO `t_product` VALUES ('10259', '我所理解的生活', '我所理解�
 INSERT INTO `t_product` VALUES ('10260', '过得刚好', '过得刚好', '56.00', '44.00', '/attached/image/20140304/1393900429646_1.jpg', '2014-03-04 10:34:08', 'huangf', null, '2014-03-20 17:54:21', 'y', 'n', '12', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393900429646_3.jpg\" alt=\"\" />', null, null, '28', '220', '134', null, null, null, null, null, 'item', '0', 'n', null);
 INSERT INTO `t_product` VALUES ('10261', '笑巴喜儿童餐椅 多功能实木无漆宝宝餐椅 高度两档调节婴儿餐椅', '笑巴喜儿童餐椅 多功能实木无漆宝宝餐椅 高度两档调节婴儿餐椅', '1280.00', '998.00', '/attached/image/20140304/1393901242967_1.jpg', '2014-03-04 10:48:05', 'huangf', null, '2014-03-20 17:54:21', 'y', 'y', '21', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901242967_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901247967_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901252561_3.jpg\" alt=\"\" />', null, null, '64', '22', '111', null, null, null, null, null, 'item', '0', 'n', null);
 INSERT INTO `t_product` VALUES ('10262', '儿童 新生婴儿纯棉防水围脖 围嘴 口水巾 宝宝超可爱绣花围兜围嘴', '儿童 新生婴儿纯棉防水围脖 围嘴 口水巾 宝宝超可爱绣花围兜围嘴', '33.00', '12.00', '/attached/image/20140304/1393901609768_1.png', '2014-03-04 10:51:57', 'huangf', null, '2014-03-20 17:54:21', 'y', 'n', '22', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901609768_3.png\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901472517_3.jpg\" alt=\"\" />', null, null, '64', '11', '22', null, null, null, null, null, 'item', '0', 'n', null);
-INSERT INTO `t_product` VALUES ('10263', '【送米兔+贴膜】MIUI/小米 小米手机3代M3MI3小米3米联通移动官网', '【送米兔+贴膜】MIUI/小米 小米手机3代M3MI3小米3米联通移动官网', '2999.00', '2998.00', '/attached/image/20140304/1393901989351_1.jpg', '2014-03-04 11:00:25', 'huangf', null, '2014-03-20 17:54:21', 'y', 'n', '82', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901965117_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901966492_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901968382_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901979726_3.png\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901989351_3.jpg\" alt=\"\" />', null, null, '74', '9999', '0', null, null, null, null, null, 'item', '0', 'n', null);
+INSERT INTO `t_product` VALUES ('10263', '【送米兔+贴膜】MIUI/小米 小米手机3代M3MI3小米3米联通移动官网', '【送米兔+贴膜】MIUI/小米 小米手机3代M3MI3小米3米联通移动官网', '2999.00', '2998.00', '/attached/image/20140304/1393901989351_1.jpg', '2014-03-04 11:00:25', 'huangf', null, '2014-03-20 17:54:21', 'y', 'n', '83', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901965117_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901966492_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901968382_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901979726_3.png\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393901989351_3.jpg\" alt=\"\" />', null, null, '74', '9999', '0', null, null, null, null, null, 'item', '0', 'n', null);
 INSERT INTO `t_product` VALUES ('10264', 'Lenovo/联想 Y410P-IFI I5-4200 4G 1T 2G独显 GT755', 'Lenovo/联想 Y410P-IFI I5-4200 4G 1T 2G独显 GT755 四代 Y410', '4999.00', '4555.00', '/attached/image/20140304/1393918441763_1.jpg', '2014-03-04 15:34:39', 'huangf', null, '2014-03-20 17:54:21', 'y', 'y', '17', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393918441763_3.jpg\" alt=\"\" />', null, null, '26', '20', '120', null, null, null, null, null, 'item', '0', 'n', null);
 INSERT INTO `t_product` VALUES ('10265', 'Lenovo/联想 Lenovo G480A-ITH(D) G470 I3I5I714寸', 'Lenovo/联想 Lenovo G480A-ITH(D) G470 I3I5I714寸笔记本电脑', '8999.00', '8666.00', '/attached/image/20140304/1393918665327_1.jpg', '2014-03-04 15:38:16', 'huangf', null, '2014-03-20 17:54:21', 'y', 'y', '32', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393918655187_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393918663624_3.jpg\" alt=\"\" /><img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393918665327_3.jpg\" alt=\"\" />', null, null, '26', '1000', '9999', null, null, null, null, null, 'item', '0', 'n', null);
 INSERT INTO `t_product` VALUES ('10266', 'Lenovo/联想 Lenovo G480A-ITH(D)G470 G570 G580新', 'Lenovo/联想 Lenovo G480A-ITH(D)G470 G570 G580新款全面到货', '6777.00', '6555.00', '/attached/image/20140304/1393918663624_1.jpg', '2014-03-04 15:41:58', 'huangf', null, '2014-03-20 17:54:21', 'n', 'n', '21', '2', '<img src=\"http://myshopxx.oss.aliyuncs.com/attached/image/20140304/1393918882002_3.png\" alt=\"\" />', null, null, '26', '899', '900', null, null, null, null, null, 'item', '0', 'n', null);
@@ -7547,7 +7547,7 @@ CREATE TABLE `t_systemlog` (
   `loginArea` varchar(45) DEFAULT NULL,
   `diffAreaLogin` char(1) DEFAULT 'n',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=867 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=870 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_systemlog
@@ -7558,6 +7558,9 @@ INSERT INTO `t_systemlog` VALUES ('863', 'login', 'login', '1', 'admin', '10.0.0
 INSERT INTO `t_systemlog` VALUES ('864', 'login', 'login', '1', 'admin', '10.0.0.142', '2015-12-15 16:03:36', '[]', 'n');
 INSERT INTO `t_systemlog` VALUES ('865', 'login', 'login', '1', 'admin', '10.0.0.86', '2015-12-16 09:39:04', '[]', 'n');
 INSERT INTO `t_systemlog` VALUES ('866', 'login', 'login', '1', 'admin', '10.0.0.106', '2015-12-16 10:53:23', '[]', 'n');
+INSERT INTO `t_systemlog` VALUES ('867', 'login', 'login', '1', 'admin', '127.0.0.1', '2015-12-16 18:09:23', null, 'n');
+INSERT INTO `t_systemlog` VALUES ('868', 'login', 'login', '1', 'admin', '127.0.0.1', '2015-12-16 18:23:50', null, 'n');
+INSERT INTO `t_systemlog` VALUES ('869', 'login', 'login', '1', 'admin', '127.0.0.1', '2015-12-16 18:37:30', null, 'n');
 
 -- ----------------------------
 -- Table structure for t_systemsetting
