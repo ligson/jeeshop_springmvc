@@ -174,7 +174,7 @@ function defaultProductImg(){
 				</div>
 		
 				<!-- 排序栏 -->
-				<c:if test="${productList !=null and productList.size !=0 }">
+				<c:if test="${productList !=null and productList.size() !=0 }">
 					<div class="row" style="margin: 0px;">
 						<div class="col-xs-12">
 							<span class="attr_css" style="margin:5px;font-weight: bold;">排序</span>
@@ -262,7 +262,7 @@ function defaultProductImg(){
 						</div>
 					</c:forEach>
 					</div>
-					<c:if test="${ productList==null or productList.size==0 }">
+					<c:if test="${ productList==null or productList.size()==0 }">
 						抱歉，没有找到<font color='#f40'><%=request.getAttribute("key")!=null?request.getAttribute("key").toString():"" %></font>相关的宝贝!
 						<%request.setAttribute("key",null); %>
 						<br>
@@ -284,7 +284,7 @@ function defaultProductImg(){
 				</div>
 				<div class="row" style="margin-top: 10px;">
 					<div class="col-xs-12" style="border: 0px solid;text-align: right;">
-						<c:if test="${ productList!=null and productList.size !=0}">
+						<c:if test="${ productList!=null and productList.size() !=0}">
 							<%@ include file="pager.jsp"%>
 						</c:if>
 					</div>
